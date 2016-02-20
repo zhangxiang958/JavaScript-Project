@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简易JS年历</title>
+	<style>
+		.calendar {
+			margin: 0 auto;
+			width: 300px;
+			background: #ccc;
+			text-align: center;
+		}
+		.calendar ul {
+			padding: 0;
+			list-style-type: none;
+		}
+		.data {
+			margin: 0 auto;
+			width: 250px;
+			overflow: hidden;
+		}
+		.data li {
+			float: left;
+			margin: 5px;
+			width: 50px;
+			height: 50px;
+			background: #333;
+			color: white;
+			line-height: 1.5;
+		}
+		.data li:hover {
+			color: red;
+			background: white;
+		}
+		.data li strong {
+			display: block;
+		}
+		.message {
+			padding-left: 5px;
+			border: 1px solid #999;
+			background: white;
+			text-align: left;
+		}
+		.message li strong {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="calendar">
+		<ul class="data">
+			<li><strong>1</strong> JAN</li>
+			<li><strong>2</strong> FER</li>
+			<li><strong>3</strong> MAR</li>
+			<li><strong>4</strong> APR</li>
+			<li><strong>5</strong> MAY</li>
+			<li><strong>6</strong> JUN</li>
+			<li><strong>7</strong> JUL</li>
+			<li><strong>8</strong> AUG</li>
+			<li><strong>9</strong> SEP</li>
+			<li><strong>10</strong> OCT</li>
+			<li><strong>11</strong> NOV</li>
+			<li><strong>12</strong> DEC</li>
+		</ul>
+		<div class="message">
+			<h2>
+				<strong>6</strong>月节日
+			</h2>
+			<p>端午节：6月4日至6日放假3天</p>
+		</div>
+	</div>
+	
+	<script src="js/calendar.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页换肤</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		input {
+			width: 10px;
+			height: 10px;
+		}
+		ul {
+			list-style: none;
+			overflow: hidden;
+		}
+		ul li {
+			display: inline-block;
+			width: 200px;
+			line-height: 30px;
+			border: 1px solid #333;
+		}
+		.red-button {
+			background: red;
+		}
+		.green-button {
+			background: green;
+		}
+		.black-button {
+			background: black;
+		}
+		.red-body {
+			background: #fdd;
+		}
+		.red-body ul {
+			background: red;
+		}
+		.green-body {
+			background: #a3c5a8;
+		}
+		.green-body ul {
+			background: green;
+		}
+		.black-body {
+			background: #ccc;
+		}
+		.black-body ul {
+			background: black;
+		}
+	</style>
+</head>
+<body class="green-body">
+	<input type="button" class="red-button">
+	<input type="button" class="green-button">
+	<input type="button" class="black-button">
+	<ul>
+		<li>新闻</li>
+		<li>娱乐</li>
+		<li>体育</li>
+		<li>电影</li>
+		<li>音乐</li>
+		<li>旅游</li>
+	</ul>
+	<script src="js/change.js"></script>	
+</body>
+</html>

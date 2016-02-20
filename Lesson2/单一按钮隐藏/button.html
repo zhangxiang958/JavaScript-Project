@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单一按钮显示/隐藏</title>
+	<style>
+		a {
+			color: gray;
+		}
+		ul {
+			padding: 0;
+			list-style-type: none;
+		}
+		.list {
+			margin: 0 auto;
+			width: 200px;
+			border: 1px solid #ccc;
+		}
+		.list>a {
+			display: block;
+			text-decoration: none;
+			line-height: 2em;
+			background: #999;
+		}
+		.list-item {
+			display: none;
+			margin: 0;
+			background: #666;
+		}
+		.list-item li {
+			padding-top: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="list">
+		<a href="javascript:void(0)">播放列表</a>
+		<ul class="list-item">
+			<li><a href="">玩家之徒-蔡依林</a></li>
+			<li><a href="">原谅我就是这样的女生-戴佩妮</a></li>
+			<li><a href="">猜不透-丁当</a></li>
+			<li><a href="">自导自演-周杰伦</a></li>
+			<li><a href="">浪漫窝-弦子</a></li>
+			<li><a href="">流年-王菲</a></li>
+		</ul>
+	</div>
+	<script src="js/button.js"></script>
+</body>
+</html>

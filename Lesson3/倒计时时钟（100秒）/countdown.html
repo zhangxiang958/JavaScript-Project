@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>倒计时时钟</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		.count {
+			margin: 0 auto;
+			width: 500px;
+			height: 200px;
+			background: black;
+		}
+		input {
+			margin: 20px 0;
+			width: 50px;
+		}
+		span {
+			color: white;
+		}
+		button {
+			display: block;
+			margin: 50px auto;
+			width: 400px;
+			background: green;
+		}
+		.cancel {
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="count">
+		<input type="button" value="1">
+		<span>分钟</span>
+		<input type="button" value="40">
+		<span>秒</span>
+		<button>启动</button>
+	</div>
+	<script src="js/countdown.js"></script>
+</body>
+</html>

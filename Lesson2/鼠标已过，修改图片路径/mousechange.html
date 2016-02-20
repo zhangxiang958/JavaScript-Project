@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标移过，改变图片路径</title>
+	<style>
+		body {
+			background: black;
+		}
+		img {
+			width: 100px;
+			height: 100px;
+		}
+		.content {
+			margin: 0 auto;
+			width: 400px;
+			height: 650px;
+			background: gray;
+			text-align: center;
+		}
+		.content .warp img {
+			width: 200px;
+			height: 200px;
+		}
+		ul {
+			margin: 0 auto;
+			padding: 0 40px;
+			list-style-type: none;
+			overflow: hidden;
+		}
+		ul li {
+			float: right;
+			margin: 1px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="warp">
+			<img src="img/1.jpg" alt="">
+		</div>
+		<ul>
+			<li><img src="img/1.jpg" alt=""></li>
+			<li><img src="img/2.jpg" alt=""></li>
+			<li><img src="img/3.jpg" alt=""></li>
+			<li><img src="img/4.jpg" alt=""></li>
+			<li><img src="img/5.jpg" alt=""></li>
+			<li><img src="img/6.jpg" alt=""></li>
+			<li><img src="img/7.jpg" alt=""></li>
+			<li><img src="img/8.jpg" alt=""></li>
+			<li><img src="img/9.jpg" alt=""></li>
+			<li><img src="img/10.jpg" alt=""></li>
+			<li><img src="img/10.jpg" alt=""></li>
+			<li><img src="img/10.jpg" alt=""></li>
+		</ul>
+	</div>
+
+	<script src="js/mousechange.js"></script>
+</body>
+</html>

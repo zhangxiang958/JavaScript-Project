@@ -1,0 +1,11 @@
+.content {
+	margin: 0 auto;
+	width: 960px;
+	text-align: center;
+}
+.thing {
+	margin: 10px auto;
+	width: 100px;
+	height: 100px;
+	background: #111;
+}

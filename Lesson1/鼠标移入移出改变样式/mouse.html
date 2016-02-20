@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标移入移出改变样式</title>
+	<style>
+		div {
+			margin: 0 auto;
+			padding: 10px;
+			width: 200px;
+			height: 200px;
+			background: black;
+			color: white;
+		}
+		div p {
+			margin: 0;
+			width: 200px;
+			height: 200px;
+		}
+		.change {
+			background: red;
+			cursor: pointer;
+		}
+		.change p {
+			color: red;
+			background: gray;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>鼠标移入改变样式，鼠标移出恢复</p>
+	</div>
+	<script src="js/mouse.js"></script>
+</body>
+</html>
