@@ -7,70 +7,123 @@
 		body {
 			text-align: center;
 		}
-		.counter {
+		.cal {
 			position: relative;
 			margin: 0 auto;
-			width: 300px;
+			border-collapse: separate;
+			border-spacing: 0;
+			text-align: center;
+			color: #333;
 		}
-		.counter input {
-			width: 300px;
-			border: none;
-			font-size: 2em;
-			background: #ccc;
-			line-height: 50px;
-			outline: none;
-		}
-		ul {
-			position: relative;
+		.cal th, .cal td {
 			margin: 0;
-			padding: 0 0 17px 8px;
-			list-style-type: none;
-			background: black;
-			overflow: hidden;
+			padding: 0;
 		}
-		ul li {
-			float: left;
-			margin: 17px 10px 0 0;
-			width: 60px;
-			line-height: 40px;
-			background: gray;
+		.cal tbody {
+			position: relative;
+			color: #a4a4a4;
+			text-shadow: 1px 1px 1px white;
+			background-color: #d0d9e2;
 		}
-		.btn-2 {
+		.cal tbody td {
+			border-top: 1px solid #e0e0e1;
+			border-right: 1px solid #9f9fa1;
+			border-bottom: 1px solid #acacad;
+			border-left: 1px solid #dfdfe0;
+		}
+		.cal tbody a {
+			display: block;
+			padding: 2em;
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+			background-color: #c0c8d2;
+			/*padding: 0.385em 0.692em 0.308em 0.692em;*/
+		}
+		.cal tbody .zero {
 			position: absolute;
-			top: 183px;
-			left: 10px;
-			width: 100px;
+			bottom: 0;
+			left: 3px;
+			padding-left: 10.5em;
+			padding-right: 10.5em;
 		}
-		.btn-3 {
+		.cal tbody .doc {
+			position: relative;
+			bottom: 0;
+			left: 175px;
+			padding-left: 0.8em;
+			padding-right: 0.8em;
+		}
+		.cal tbody .equal {
 			position: absolute;
-			top: 100px;
+			bottom: 0;
 			right: 0;
+			padding-top: 4.65em;
+			padding-bottom: 4.65em;
+			padding-left: 5.3em;
+			padding-right: 5.3em;
+		}
+		.screen {
+			width: 22.5em;
+			height: 5em;
+			border-color: transparent;
+			color: white;
+			font-size: 2em;
+			background-color: #444;
+			outline: none;
+			/*direction: rtl;*/
+		}
+		.exp {
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			width: 53.5em;
+			border-color: transparent;
+			color: white;
+			background-color: #444;
+			outline: none;
+			/*direction: rtl;*/
 		}
 	</style>
 </head>
 <body>
-	<div class="counter">
-		<input type="button">
-		<ul>
-			<li class="btn-1">c</li>
-			<li class="btn-1">%</li>
-			<li class="btn-1">/</li>
-			<li class="btn-1">×</li>
-			<li class="btn-1">-</li>
-			<li class="btn-1">+</li>
-			<li>9</li>
-			<li>8</li>
-			<li>7</li>
-			<li>6</li>
-			<li>5</li>
-			<li>4</li>
-			<li>3</li>
-			<li>2</li>
-			<li>1</li>
-			<li class="btn-2">0</li>
-			<li>.</li>
-			<li class="btn-3">=</li>
-		</ul>
-	</div>
+	<table class="cal" summary="counter">
+		<caption>
+			<input type="text" class="exp" disabled="disabled" value="">
+			<input type="text" class="screen" disabled="disabled" value="0">
+		</caption>
+		<tbody>
+			<tr>
+				<td><a href="javascript:void(0)">c</a></td>
+				<td><a href="javascript:void(0)">%</a></td>
+				<td><a href="javascript:void(0)">/</a></td>
+				<td><a href="javascript:void(0)">×</a></td>
+			</tr>
+			<tr>
+				<td><a href="javascript:void(0)">7</a></td>
+				<td><a href="javascript:void(0)">8</a></td>
+				<td><a href="javascript:void(0)">9</a></td>
+				<td><a href="javascript:void(0)">-</a></td>
+			</tr>
+			<tr>
+				<td><a href="javascript:void(0)">4</a></td>
+				<td><a href="javascript:void(0)">5</a></td>
+				<td><a href="javascript:void(0)">6</a></td>
+				<td><a href="javascript:void(0)">+</a></td>
+			</tr>
+			<tr>
+				<td><a href="javascript:void(0)">1</a></td>
+				<td><a href="javascript:void(0)">2</a></td>
+				<td><a href="javascript:void(0)">3</a></td>
+			</tr>
+			<tr>
+				<td><a href="javascript:void(0)" class="zero">0</a></td>
+				<td><a href="javascript:void(0)" class="doc">.</a></td>
+				<td><a href="javascript:void(0)" class="equal">=</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script src="js/counter.js"></script>
 </body>
 </html>
