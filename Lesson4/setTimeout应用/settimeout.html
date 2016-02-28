@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>setTimeout应用</title>
+	<style>
+
+		body {
+			text-align: center;
+		}
+		a {
+			text-decoration: none;
+		}
+		ul {
+			padding: 0;
+			list-style-type: none;
+		}
+		ul li {
+			display: inline-block;
+		}
+		.navbar {
+			margin: 0 auto;
+			width: 72em;
+		}
+		.navbar li ul {
+			position: absolute;
+		}
+		.nav a {
+			display: block;
+			width: 8em;
+			line-height: 2.1;
+			color: white;
+			background-color: #faa819;
+		}
+		div.nav-job, div.nav-man, div.nav-site, div.nav-design, div.nav-code, div.nav-work, div.nav-server {
+			display: none;
+		}
+		.nav-job li a, .nav-man li a, .nav-site li a, .nav-design li a, .nav-code li a, .nav-work li a, .nav-server li a {
+			position: relative;
+			margin-left: -3px;
+			line-height: 1.2;
+			background-color: #223456;
+		}
+		.arrow {
+			display: none;
+			margin: 0 auto;
+			border: 5px solid transparent;
+			width: 0;
+			height: 0;
+			border-bottom: 5px solid #223456
+		}
+		.show {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul class="navbar">
+			<li><a href="javascript:void(0)">站长之家</a></li>
+			<li>
+				<a href="javascript:void(0)">行业咨询</a>
+				<div class="nav-job">
+					<div class="arrow"></div>
+					<ul class="nav-job">
+						<li><a href="javascript:void(0)">业界动态</a></li>
+						<li><a href="javascript:void(0)">收购融资</a></li>
+						<li><a href="javascript:void(0)">门户动态</a></li>
+						<li><a href="javascript:void(0)">搜索引擎</a></li>
+						<li><a href="javascript:void(0)">网络游戏</a></li>
+						<li><a href="javascript:void(0)">电子商务</a></li>
+						<li><a href="javascript:void(0)">广告传媒</a></li>
+						<li><a href="javascript:void(0)">厂商开发</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:void(0)">站长在线</a>
+				<div class="nav-man">
+					<div class="arrow"></div>
+					<ul class="nav-man">
+						<li><a href="javascript:void(0)">站长报道</a></li>
+						<li><a href="javascript:void(0)">好站推荐</a></li>
+						<li><a href="javascript:void(0)">站长聚会</a></li>
+						<li><a href="javascript:void(0)">站长访谈</a></li>
+						<li><a href="javascript:void(0)">站长茶馆</a></li>
+						<li><a href="javascript:void(0)">网站排行</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:void(0)">网站运营</a>
+				<div class="nav-site">
+					<div class="arrow"></div>
+					<ul class="nav-site">
+						<li><a href="javascript:void(0)">建站经验</a></li>
+						<li><a href="javascript:void(0)">策划盈利</a></li>
+						<li><a href="javascript:void(0)">搜索优化</a></li>
+						<li><a href="javascript:void(0)">网站推广</a></li>
+						<li><a href="javascript:void(0)">免费资源</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:void(0)">设计在线</a>
+				<div class="nav-design">
+					<div class="arrow"></div>
+					<ul class="nav-design">
+						<li><a href="javascript:void(0)">酷站推荐</a></li>
+						<li><a href="javascript:void(0)">网页设计</a></li>
+						<li><a href="javascript:void(0)">WEB标准</a></li>
+						<li><a href="javascript:void(0)">视频处理</a></li>
+						<li><a href="javascript:void(0)">设计活动</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:void(0)">网络编程</a>
+				<div class="nav-code">
+					<div class="arrow"></div>
+					<ul class="nav-code">
+						<li><a href="javascript:void(0)">ASP编程</a></li>
+						<li><a href="javascript:void(0)">PHP编程</a></li>
+						<li><a href="javascript:void(0)">.Net编程</a></li>
+						<li><a href="javascript:void(0)">XML编程</a></li>
+						<li><a href="javascript:void(0)">Access</a></li>
+						<li><a href="javascript:void(0)">MySQL</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:void(0)">联盟咨询</a>
+				<div class="nav-work">
+					<div class="arrow"></div>
+					<ul class="nav-work">
+						<li><a href="javascript:void(0)">联盟动态</a></li>
+						<li><a href="javascript:void(0)">联盟介绍</a></li>
+						<li><a href="javascript:void(0)">联盟点评</a></li>
+						<li><a href="javascript:void(0)">网赚技巧</a></li>
+					</ul>
+				</div>	
+			</li>
+			<li>
+				<a href="javascript:void(0)">服务器</a>
+				<div class="nav-server">
+					<div class="arrow"></div>
+					<ul class="nav-server">
+						<li><a href="javascript:void(0)">WEB服务器</a></li>
+						<li><a href="javascript:void(0)">FTP服务器</a></li>
+						<li><a href="javascript:void(0)">Mail服务器</a></li>
+						<li><a href="javascript:void(0)">DNS服务器</a></li>
+						<li><a href="javascript:void(0)">win服务器</a></li>
+						<li><a href="javascript:void(0)">linux服务器</a></li>
+						<li><a href="javascript:void(0)">安全防护</a></li>
+						<li><a href="javascript:void(0)">虚拟主机</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<script src="js/settimeout.js"></script>
+</body>
+</html>
