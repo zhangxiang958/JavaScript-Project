@@ -5,6 +5,8 @@ window.onload = function() {
 	var lNum = list[1].getElementsByTagName("li");
 	var timer = play = null;
 	var i = index = 0;
+	var turn = false; //turn 表示方向，false表示从左到右，true表示从右到左
+
 
 	//焦点切换
 	for(var i = 0; i < lNum.length; i ++){
@@ -27,9 +29,24 @@ window.onload = function() {
 
 	function autoPlay() {
 		play = setInterval(function() {
-			index++;
-			index >= lImg.length && (index = 0);
-			show(index);
+			
+			if(!turn) {  //从左到右
+
+				index ++;
+				index >= lImg.length - 1 && (turn = true);
+				show(index);
+				
+			} else {
+				
+				index --;
+				index == 0 && (turn = false);
+				show(index);
+			}
+
+			//无方向版本
+			// index++;
+			// index >= lImg.length && (index = 0);
+			// show(index);
 		},2000);
 	}
 	autoPlay();
@@ -60,10 +77,10 @@ window.onload = function() {
 
 
 
-
+	//拙劣的版本一：
 	// function loop(num) {
 	// 	carouselShow.style.top =  -(num * 200) + 'px';
-
+	
 	// 	if(num >= 5) {
 	// 		num = 0;
 	// 		loop(num);
