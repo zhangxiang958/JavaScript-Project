@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			background: #23384e;
+		}
+		.search {
+			position: relative;
+			margin: 10px auto;
+			width: 350px;
+		}
+		.search a {
+			float: left;
+			width: 80px;
+			height: 24px;
+			color: #fff;
+			letter-spacing: 4px;
+			line-height: 22px;
+			text-align: center;
+			margin: 4px 0 0 10px;
+		}
+		.search form {
+			background-repeat: repeat-x;
+    			background-position: 0 -34px;
+    			margin: 0 20px 0 40px;
+		}
+		.search .select {
+			float: left;
+			color: #fff;
+			width: 190px;
+			height: 22px;
+			cursor: pointer;
+			margin-top: 4px;
+			line-height: 22px;
+			padding-left: 10px;
+		}
+		.search ul {
+			display: none;
+			position: absolute;
+			top: 26px;
+			left: 40px;
+			padding: 0;
+			width: 198px;
+			border: 1px solid #fff;
+			background: #2b2b2b;
+			list-style-type: none;
+		}
+		.search ul li {
+			height: 25px;
+    			line-height: 24px;
+    			cursor: pointer;
+    			padding-left: 10px;
+    			margin-bottom: -1px;
+    			border-bottom: 1px dotted #fff;
+		}
+		.hover {
+			background: #8b8b8b;
+		}
+	</style>
+</head>
+<body>
+	<div class="search">
+		<div class="box">
+			<form action="">
+				<span class="select">请选择游戏</span>
+				<a href="">搜索</a>
+			</form>
+		</div>
+		<ul>
+			<li>地下城与勇士</li>
+			<li>魔兽世界（国服）</li>
+			<li>魔兽世界（台服）</li>
+			<li>热血江湖</li>
+			<li>神鬼传奇</li>
+			<li>大话西游II</li>
+			<li>QQ幻想世界</li>
+		</ul>
+	</div>
+	<script src="js/select.js"></script>
+</body>
+</html>
